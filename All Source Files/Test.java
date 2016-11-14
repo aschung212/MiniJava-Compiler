@@ -1,5 +1,5 @@
-//class Main {
-//    public static void main(String[] s){
+class TestClass {
+    public static void main(String[] s){
 //        int x;
 //        int[] arr;
 //        boolean b;
@@ -35,9 +35,19 @@
 //            b = b;
 //        }
 //        newBorn = honda.crash(mustang);       
-//    }
-//}
-//
+        int x;
+        int[] y;
+        y = new int[3];
+        if (1 < (y.length)) {
+            x = 1;
+        } else {
+            x = 2;
+        }
+        
+    }
+}
+
+
 //
 //class Parent {
 //    int x;
@@ -74,7 +84,30 @@
 //	}
 //}
 //
-//class A extends B {}
+class B extends A {
+    int z;
+    int[] y;
+    A a;
+    public int getX(int k) {
+        y = new int[3];
+        x = y[1];
+        return x;
+    }
+}
+class A {
+    boolean q;
+    int[] z;
+    int x;
+    public A getSelf() {
+        return this.getThis(3, 4);
+    }
+    public A getThis(int x, int p) {
+        System.out.println(3);
+        return new A();
+    }
+}
+
+
 //
 //class Car {
 //    Child passenger;
@@ -90,6 +123,12 @@
 //    public int setWheels(int n) {
 //        numWheels = n;
 //        return numWheels;
+//    }
+//    
+//    public Child crash(Car crashInto) {
+//        Child kid;
+//        kid = new Child().die();
+//        return kid;
 //    }
 //}
 //
